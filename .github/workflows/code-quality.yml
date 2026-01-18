@@ -1,0 +1,33 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pylint black flake8
+    
+    - name: Check code formatting with black
+      run: black --check . --diff
+      continue-on-error: true
+    
+    - name: Run pylint
+      run: pylint assignments/ projects/ labs/ src/ --disable=all --enable=E,F
+      continue-on-error: true

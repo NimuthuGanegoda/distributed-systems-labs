@@ -2,6 +2,8 @@
 
 A comprehensive repository for distributed systems assignments, labs, and personal projects.
 
+🔗 **GitHub Repository**: [distributed-systems-labs](https://github.com/YOUR-USERNAME/distributed-systems-labs)
+
 ## 📁 Directory Structure
 
 ```
@@ -142,10 +144,44 @@ assignment-N-topic/
 - Each assignment/project has its own README with specific details
 - See `docs/` folder for architectural discussions
 - Check individual project READMEs for implementation details
+- See [GITHUB_SETUP.md](GITHUB_SETUP.md) for GitHub integration guide
 
 ## 🤝 Contributing
 
 Follow the structure above when adding new work. Keep projects organized and self-contained.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
+## 🚀 Git & GitHub
+
+This repository is version controlled with Git and synced to GitHub.
+
+### Quick Commands
+
+```bash
+# Check status
+git status
+
+# Commit your changes
+git add .
+git commit -m "Your message"
+
+# Push to GitHub
+git push
+
+# Pull from GitHub
+git pull
+```
+
+For detailed setup, see [GITHUB_SETUP.md](GITHUB_SETUP.md)
+
+## 🔄 Workflows
+
+GitHub Actions automatically run on every push:
+- **Python Tests**: Runs pytest on Python 3.9, 3.10, 3.11
+- **Code Quality**: Checks code formatting and linting
+
+View workflow status in the GitHub Actions tab.
 
 ---
 
