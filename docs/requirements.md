@@ -20,7 +20,8 @@ flake8>=7.3.0
 
 # Utilities
 requests>=2.34.2
-numpy>=2.5.1  # For numerical computations if needed
+numpy>=2.4.6; python_version < "3.12"  # For numerical computations if needed
+numpy>=2.5.1; python_version >= "3.12"
 ```
 
 ## Installation
