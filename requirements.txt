@@ -1,17 +1,21 @@
 # Shared dependencies for distributed systems labs/assignments/projects.
 # Project-specific extras belong in each assignment/project/lab folder's own requirements.txt.
 # See docs/requirements.md for details.
+#
+# Versions below are the latest release of each package that still supports
+# Python 3.9 (the oldest version in the CI test matrix). Newer majors of
+# pytest/pytest-asyncio/pylint/black/requests have already dropped 3.9/3.10
+# support and would break CI's test (3.9) job if pinned here.
 
 # Testing
-pytest>=9.1.1
-pytest-asyncio>=1.4.0
+pytest>=8.4.2
+pytest-asyncio>=1.2.0
 
 # Code Quality
-pylint>=4.0.6
-black>=26.5.1
+pylint>=3.3.9
+black>=25.11.0
 flake8>=7.3.0
 
 # Utilities
-requests>=2.34.2
-numpy>=2.4.6; python_version < "3.12"
-numpy>=2.5.1; python_version >= "3.12"
+requests>=2.32.5
+numpy>=2.0.2

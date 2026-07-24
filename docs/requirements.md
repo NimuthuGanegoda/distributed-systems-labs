@@ -10,19 +10,22 @@ library, so nothing to install there):
 
 ```
 # Testing
-pytest>=9.1.1
-pytest-asyncio>=1.4.0
+pytest>=8.4.2
+pytest-asyncio>=1.2.0
 
 # Code Quality
-pylint>=4.0.6
-black>=26.5.1
+pylint>=3.3.9
+black>=25.11.0
 flake8>=7.3.0
 
 # Utilities
-requests>=2.34.2
-numpy>=2.4.6; python_version < "3.12"  # For numerical computations if needed
-numpy>=2.5.1; python_version >= "3.12"
+requests>=2.32.5
+numpy>=2.0.2
 ```
+
+Versions are pinned to the latest release of each package that still
+supports Python 3.9, since that's the oldest interpreter in the CI test
+matrix (`.github/workflows/python-tests.yml`, `python-package.yml`).
 
 ## Installation
 
