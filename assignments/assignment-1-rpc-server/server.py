@@ -6,9 +6,10 @@ It sits between the Client and the Database.
 It handles logging in and checking fees before talking to the DB.
 """
 
-from xmlrpc.server import SimpleXMLRPCServer
-import xmlrpc.client
 import uuid
+import xmlrpc.client
+from xmlrpc.server import SimpleXMLRPCServer
+
 import shared
 
 # Connect to the Database Server

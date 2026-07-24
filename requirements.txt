@@ -1,41 +1,16 @@
-# Requirements
-
-## Shared Dependencies
-
-Add project-specific dependencies to the `requirements.txt` file in each assignment/project/lab folder.
-
-Common dependencies for distributed systems projects:
-
-```
-# Networking
-asyncio  # Built-in async library
-socket   # Built-in socket library
+# Shared dependencies for distributed systems labs/assignments/projects.
+# Project-specific extras belong in each assignment/project/lab folder's own requirements.txt.
+# See docs/requirements.md for details.
 
 # Testing
-pytest>=7.0
-pytest-asyncio>=0.20
+pytest>=9.1.1
+pytest-asyncio>=1.4.0
 
 # Code Quality
-pylint>=2.15
-black>=22.0
-flake8>=5.0
+pylint>=4.0.6
+black>=26.5.1
+flake8>=7.3.0
 
 # Utilities
-requests>=2.28
-numpy>=1.23  # For numerical computations if needed
-```
-
-## Installation
-
-```bash
-# Install shared dependencies (if any)
-pip install -r requirements.txt
-
-# Install project-specific dependencies
-cd assignments/assignment-1-rpc-server
-pip install -r requirements.txt
-```
-
----
-
-Last Updated: January 18, 2026
+requests>=2.34.2
+numpy>=2.5.1

@@ -1,7 +1,8 @@
-import xmlrpc.client
-import shared
 import time
-import sys
+import xmlrpc.client
+
+import shared
+
 
 def run_verification():
     print("Beginning Verification...")

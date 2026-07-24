@@ -4,11 +4,11 @@ main.py
 Simple launcher script to start everything at once.
 """
 
-import subprocess
-import time
-import sys
 import os
-import signal
+import subprocess
+import sys
+import time
+
 
 def main():
     print("-" * 40)

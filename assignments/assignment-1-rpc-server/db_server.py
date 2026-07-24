@@ -5,11 +5,11 @@ This is the Database Server. It handles all the SQLite database operations.
 It listens for requests from the main Server.
 """
 
-import sqlite3
 import hashlib
+import sqlite3
 from xmlrpc.server import SimpleXMLRPCServer
+
 import shared
-import os
 
 DB_FILE = "bank.db"
 

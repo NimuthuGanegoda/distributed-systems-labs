@@ -5,9 +5,11 @@ This is the Client program.
 It shows the menu and sends commands to the Server.
 """
 
-import xmlrpc.client
-import shared
 import sys
+import xmlrpc.client
+
+import shared
+
 
 def main():
     print("Connecting to Application Server...")
